@@ -49,3 +49,12 @@ color: wheat;
 .piza_im2 img{
   border-radius: 120px;
 }
+.about_us{
+  background-image: url(images/im3.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: wheat;
+  padding: 10%;
+  color: #050405;
+}
