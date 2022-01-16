@@ -65,4 +65,8 @@ color: wheat;
 .fa{
   font-size: xx-large;
 }
+.your_location{
+  display: none;
+  padding-top: 5%;
+}
 
