@@ -42,4 +42,9 @@ $(document).ready(function () {
 
    let deliveryFee=500
 
+  $("#radio_bn").click(function () {
+  });
+
+
+
 });
