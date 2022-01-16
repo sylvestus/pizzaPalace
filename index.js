@@ -62,6 +62,24 @@ $(document).ready(function () {
       alert("sellect your pizza size");
     }
 
+    //crust
+
+    var selectedcrusttype = $("input[name='pcrust']:checked").val();
+    if (selectedcrusttype == "crispy") {
+      var pricePerCrust = crispy.price;
+      //return pricePerCrust;
+      //alert(pricePerCrust);
+    } else if (selectedcrusttype == "stuffed") {
+      var pricePerCrust = stuffed.price;
+      //return pricePerCrust;
+      alert(pricePerCrust)
+    } else if (selectedcrusttype == "gluttenfree") {
+      var pricePerCrust = gluttenFree.price;
+      //return pricePerCrust;
+      //alert(pricePerSize)
+    } else {
+      alert("sellect your pizza crust");
+    }
 
   });
 
