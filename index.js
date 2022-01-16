@@ -17,4 +17,10 @@ $(document).ready(function () {
   var medium = new Size("medium", 1000);
   var large = new Size("large", 1500);
 
+  //crust
+
+  function PizaCrust(crust, price) {
+    this.crust = crust;
+    this.price = price;
+  }
 });
