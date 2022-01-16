@@ -33,6 +33,13 @@ $(document).ready(function () {
     this.toppings = toppings;
     this.price = price;
   }
+  var Pepperoni = new PizaToppings("pepperoni", 300); //asumtion prices for small
+  var Mushroom = new PizaToppings("mushroom", 250);
+  var Onion = new PizaToppings("onion", 200);
+  var Tomato = new PizaToppings("tomato", 200);
+  var FreshGarlic = new PizaToppings("freshGarlic", 200);
+  var FreshBasil = new PizaToppings("freshBasil", 200);
 
+   let deliveryFee=500
 
 });
