@@ -27,4 +27,12 @@ $(document).ready(function () {
   var stuffed = new PizaCrust("stuffed", 250);
   var gluttenFree = new PizaCrust("glutten free", 200);
 
+  //toppings
+
+  function PizaToppings(toppings, price) {
+    this.toppings = toppings;
+    this.price = price;
+  }
+
+
 });
