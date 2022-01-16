@@ -120,7 +120,10 @@ $(document).ready(function () {
     var pizzaNumber = $("#number").val();
     //alert(pizzaNumber)
     //prototype
-  
+    var totalAmount = function () {
+    var totalCost=((parseInt(pricePerSize) + parseInt(pricePerToppings) + parseInt(pricePerCrust) )*parseInt(pizzaNumber) )
+        return totalCost
+      };
   });
 
 
