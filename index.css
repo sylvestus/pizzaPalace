@@ -43,3 +43,9 @@ color: wheat;
   font-size: xx-large;
   text-align: center;
 }
+.piza_im2{
+  margin-top: 5%;
+}
+.piza_im2 img{
+  border-radius: 120px;
+}
