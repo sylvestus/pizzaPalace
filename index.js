@@ -136,6 +136,31 @@ $(document).ready(function () {
       $(".amnt").append(totalAmount1+ "</br>" ); 
 
 
+
+      
+      var delivery = $("input[name='delivery']:checked").val();
+      if(delivery=="delivered"){
+          let charges= totalAmount1+deliveryFee
+          //alert(charges)
+          $(".your_location").show();
+          $(".amnt").html(totalWithDelivery+ "</br>" );
+          $(".amnt").prepend("amount"+ "</br>" ); 
+
+          
+          
+      }else if(delivery=="pick-up"){
+
+          alert("your order has been recieved, thank you for shopping with us, please collect your order within the hour your charges are: "+totalAmount1)
+      }
+      else{
+          alert("select your delivery mode")
+      }
+
+
+     
+    // 
+    //  $(".your_location").show( slow, swing)
+
   });
 
 
