@@ -157,6 +157,12 @@ $(document).ready(function () {
       }
 
 
+      var loc=function(){
+        var location=$("#ulocation").val()
+            alert(location)
+        
+      }
+
      
     // 
     //  $(".your_location").show( slow, swing)
