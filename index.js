@@ -129,7 +129,13 @@ $(document).ready(function () {
       var totalWithDelivery=parseInt(totalAmount1)+parseInt(deliveryFee); 
      // alert(totalAmount1)
       //var properties=[radioValue,selectedcrusttype,selectedtoppings,pizzaNumber,totalAmount1]
-     
+      $(".size1").append(radioValue+ "</br>"); 
+      $(".type").append(selectedcrusttype+ "</br>" ); 
+      $(".topping").append(selectedtoppings+ "</br>"); 
+      $(".numb").append(pizzaNumber+ "</br>"); 
+      $(".amnt").append(totalAmount1+ "</br>" ); 
+
+
   });
 
 
