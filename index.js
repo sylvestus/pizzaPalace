@@ -13,4 +13,8 @@ $(document).ready(function () {
     this.price = price;
   }
 
+  var small = new Size("small", 500);
+  var medium = new Size("medium", 1000);
+  var large = new Size("large", 1500);
+
 });
