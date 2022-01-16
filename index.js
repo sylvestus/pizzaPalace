@@ -23,4 +23,8 @@ $(document).ready(function () {
     this.crust = crust;
     this.price = price;
   }
+  var crispy = new PizaCrust("crispy", 300); //asumtion prices for small
+  var stuffed = new PizaCrust("stuffed", 250);
+  var gluttenFree = new PizaCrust("glutten free", 200);
+
 });
