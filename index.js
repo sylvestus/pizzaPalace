@@ -124,6 +124,12 @@ $(document).ready(function () {
     var totalCost=((parseInt(pricePerSize) + parseInt(pricePerToppings) + parseInt(pricePerCrust) )*parseInt(pizzaNumber) )
         return totalCost
       };
+      totalAmount();
+      var totalAmount1=totalAmount()
+      var totalWithDelivery=parseInt(totalAmount1)+parseInt(deliveryFee); 
+     // alert(totalAmount1)
+      //var properties=[radioValue,selectedcrusttype,selectedtoppings,pizzaNumber,totalAmount1]
+     
   });
 
 
