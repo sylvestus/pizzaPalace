@@ -43,6 +43,26 @@ $(document).ready(function () {
    let deliveryFee=500
 
   $("#radio_bn").click(function () {
+    //size
+    var radioValue = $("input[name='psize']:checked").val();
+
+    if (radioValue == "large") {
+      var pricePerSize = large.price;
+      //return pricePerSize;
+     // alert(pricePerSize);
+    } else if (radioValue == "medium") {
+      var pricePerSize = medium.price;
+      //return pricePerSize;
+      //alert(pricePerSize)
+    } else if (radioValue == "small") {
+      var pricePerSize = small.price;
+      //return pricePerSize;
+      //alert(pricePerSize)
+    } else {
+      alert("sellect your pizza size");
+    }
+
+
   });
 
 
