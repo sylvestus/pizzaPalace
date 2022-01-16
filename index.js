@@ -81,6 +81,42 @@ $(document).ready(function () {
       alert("sellect your pizza crust");
     }
 
+    //toppings
+
+    var selectedtoppings = $("input[name='ptoppings']:checked").val();
+    
+    if (selectedtoppings == "pepperoni") {
+      var pricePerToppings = Pepperoni.price;
+     // alert(pricePerToppings)
+      //return pricePerToppings;
+    } else if (selectedtoppings == "mushroom") {
+      var pricePerToppings = Mushroom.price;
+      //return pricePerToppings;
+      //alert(pricePerToppings)
+    } else if (selectedtoppings == "onion") {
+      var pricePerToppings = Onion.price;
+      //alert(pricePerToppings)
+      //return pricePerToppings;
+      //alert(pricePerToppings)
+    } else if (selectedtoppings == "tomato") {
+      var pricePerToppings = Tomato.price;
+      //alert(pricePerToppings)
+      //return pricePerToppings;
+      //alert(pricePerToppings)
+    } else if (selectedtoppings == "freshgarlic") {
+      var pricePerToppings = FreshGarlic.price;
+      //alert(pricePerToppings)
+      //return pricePerToppings;
+      //alert(pricePerToppings)
+    } else if (selectedtoppings == "freshbasil") {
+      var pricePerToppings = FreshBasil.price;
+      //alert(pricePerToppings)
+      //return pricePerToppings;
+      
+    } else {
+      alert("sellect your preffered toppongs");
+    }
+
   });
 
 
