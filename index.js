@@ -117,6 +117,10 @@ $(document).ready(function () {
       alert("sellect your preffered toppongs");
     }
 
+    var pizzaNumber = $("#number").val();
+    //alert(pizzaNumber)
+    //prototype
+  
   });
 
 
