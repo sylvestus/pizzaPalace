@@ -37,3 +37,9 @@ color: wheat;
 
 
 }
+.nav_txt p{
+  font-family: "Oleo Script Swash Caps";
+  padding: 20% 0% 5% 0%;
+  font-size: xx-large;
+  text-align: center;
+}
