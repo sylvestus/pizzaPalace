@@ -89,57 +89,52 @@
 
 
         <div class="container">
-            <form action="" id="order">​
+            <form action="" id="order">
+                <h2 style="text-align: center;color: black;"><strong> Order Now</strong></h2>
+                <div class="card" style="color: black;">
+
+                    <p>Choose the size of pizza you want</p>
+
+                    <p>
+                        <label><input type="radio" name="psize" value="large">large @ ksh.900</label>
+                        <label><input type="radio" name="psize" value="medium">medium @ ksh.600</label>
+                        <label><input type="radio" name="psize" value="small">small @ ksh.400</label>
+                    </p>
+                    <hr>
+
+                    <p>Choose the crust of pizza you want</p>
+
+                    <p>
+                        <label><input type="radio" name="pcrust" value="crispy">crispy @ ksh.300 </label>
+                        <label><input type="radio" name="pcrust" value="stuffed">stuffed @ ksh.250</label>
+                        <label><input type="radio" name="pcrust" value="gluttenfree">glutten free @ ksh.200</label>
+                    </p>
+                    <hr>
+                    <p>Choose your pizza toppongs </p>
+
+                    <p>
+                        <label><input type="radio" name="ptoppings" value="pepperoni">pepperoni @ ksh.300 </label>
+                        <label><input type="radio" name="ptoppings" value="mushroom">mushroom @ ksh.200</label>
+                        <label><input type="radio" name="ptoppings" value="onion">onion @ ksh.250</label> <br>
+                        <label><input type="radio" name="ptoppings" value="tomato">tomato @ ksh.150</label>
+                        <label><input type="radio" name="ptoppings" value="freshgarlic">fresh garlic @ ksh.200</label>
+                        <label><input type="radio" name="ptoppings" value="freshbasil">fresh basil @ ksh.200</label>
+                    </p>
+                    <hr>
+                    <P> choose the number ypu would like: </P>
+
+                    <input type="number" class="form-control" id="number" placeholder="" required value="1"" /> <br>
+                    <hr>
+                    <p>choose your delivery means: </p>
+                    <label><input type=" radio" name="delivery" value="delivered">delivered</label>
+                    <label><input type="radio" name="delivery" value="pick-up">pick up</label>
+
+                </div>
+                <br>
+                <input type="button" value="checkout" id="radio_bn" class="btn btn-outline-primary""><br>
+
+                ​
             </form>
-            <!-- ​<button type=" submit" class="btn btn-success btn-lg" id="button1">Order</button> -->
-
-        </div>
-        <center>
-            <!-- where the order is previewed -->
-            <div class="container-fluid justify-content-around card your_order">
-                <div class="row">
-                    <div class="col-md-2 size1">Pizza size <br></div>
-                    <div class="col-md-2 type">Crust type <br></div>
-                    <div class="col-md-2 topping">Topping type <br></div>
-                    <div class="col-md-2 numb">Number ordered <br> </div>
-                    <div class="col-md-2 amnt">Total amount <br> </div>
-                </div>
-
-            </div>
-
-
-            <div class="container-fluid your_location">
-                <form action="/action_page.php">
-                    <label for="w3review">enter your location:</label> <br>
-                    <textarea id="ulocation" name="ulocation" rows="4" cols="50">
-                  </textarea>
-                    <br><br>
-                    <input type="button" value="Submit" id="deliv">
-                </form>
-
-            </div>
-        </center>
-
-
-        <div class="container-fluid  cont">
-            <div class="row justify-content-around">
-                <span>contacts: <br></span>
-                <div class="col-md-2 ">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-2 ">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-2 ">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-2 ">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-
-            </div>
-        </div>
-   
 
 
 
