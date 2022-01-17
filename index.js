@@ -48,18 +48,15 @@ $(document).ready(function () {
 
     if (radioValue == "large") {
       var pricePerSize = large.price;
-      //return pricePerSize;
-     // alert(pricePerSize);
+     
     } else if (radioValue == "medium") {
       var pricePerSize = medium.price;
-      //return pricePerSize;
-      //alert(pricePerSize)
+     
     } else if (radioValue == "small") {
       var pricePerSize = small.price;
-      //return pricePerSize;
-      //alert(pricePerSize)
+      
     } else {
-      alert("sellect your pizza size");
+     // alert("sellect your pizza size");
     }
 
     //crust
@@ -67,8 +64,7 @@ $(document).ready(function () {
     var selectedcrusttype = $("input[name='pcrust']:checked").val();
     if (selectedcrusttype == "crispy") {
       var pricePerCrust = crispy.price;
-      //return pricePerCrust;
-      //alert(pricePerCrust);
+     
     } else if (selectedcrusttype == "stuffed") {
       var pricePerCrust = stuffed.price;
       //return pricePerCrust;
@@ -76,9 +72,9 @@ $(document).ready(function () {
     } else if (selectedcrusttype == "gluttenfree") {
       var pricePerCrust = gluttenFree.price;
       //return pricePerCrust;
-      //alert(pricePerSize)
+     
     } else {
-      alert("sellect your pizza crust");
+     // alert("sellect your pizza crust");
     }
 
     //toppings
@@ -87,34 +83,25 @@ $(document).ready(function () {
     
     if (selectedtoppings == "pepperoni") {
       var pricePerToppings = Pepperoni.price;
-     // alert(pricePerToppings)
-      //return pricePerToppings;
+     
     } else if (selectedtoppings == "mushroom") {
       var pricePerToppings = Mushroom.price;
-      //return pricePerToppings;
-      //alert(pricePerToppings)
+      
     } else if (selectedtoppings == "onion") {
       var pricePerToppings = Onion.price;
       //alert(pricePerToppings)
-      //return pricePerToppings;
-      //alert(pricePerToppings)
+      
     } else if (selectedtoppings == "tomato") {
       var pricePerToppings = Tomato.price;
-      //alert(pricePerToppings)
-      //return pricePerToppings;
-      //alert(pricePerToppings)
+      
     } else if (selectedtoppings == "freshgarlic") {
       var pricePerToppings = FreshGarlic.price;
-      //alert(pricePerToppings)
-      //return pricePerToppings;
-      //alert(pricePerToppings)
+      
     } else if (selectedtoppings == "freshbasil") {
       var pricePerToppings = FreshBasil.price;
-      //alert(pricePerToppings)
-      //return pricePerToppings;
-      
+     
     } else {
-      alert("sellect your preffered toppongs");
+     // alert("sellect your preffered toppongs");
     }
 
     var pizzaNumber = $("#number").val();
@@ -145,17 +132,17 @@ $(document).ready(function () {
               let charges= totalAmount1+deliveryFee
               //alert(charges)
               $(".your_location").show();
-              $(".amnt").html(totalWithDelivery+ "</br>" );
-              $(".amnt").prepend("amount"+ "</br>" ); 
+              $(".amntD").append(totalWithDelivery+ "</br>" );
+              
     
               
               
           }else if(delivery=="pick-up"){
-    
+            $(".amntD").append("NA"+ "</br>" ); 
               alert("your order has been recieved, thank you for shopping with us, please collect your order within the hour your charges are: "+totalAmount1)
           }
           else{
-              alert("select your delivery mode")
+              //alert("select your delivery mode")
           }
     
     
