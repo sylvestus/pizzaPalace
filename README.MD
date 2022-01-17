@@ -1,6 +1,8 @@
 
 # ONLINE PIZZA PALACE WEBSITE
-![Website image](https://github.com/sylvestus/akanName_ip/blob/master/images/page.png)
+![Website image](https://github.com/sylvestus/pizzaPalace/blob/master/images/Screenshot%20from%202022-01-17%2009-23-48.png)
+![Website image](https://github.com/sylvestus/pizzaPalace/blob/master/images/Screenshot%20from%202022-01-17%2009-23-59.png)
+
 #### This is a website designed to take in user input about the size type and the toppings of what they would like in their pizza calculate their cost depending on wheather their order will be picked up by them or will be dellivered in which case delivery charges are added , 16 JAN 2022
 #### By ** sylvestus sigei **
 ## Description
