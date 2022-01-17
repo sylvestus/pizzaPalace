@@ -120,48 +120,56 @@ $(document).ready(function () {
     var pizzaNumber = $("#number").val();
     //alert(pizzaNumber)
     //prototype
-    var totalAmount = function () {
-    var totalCost=((parseInt(pricePerSize) + parseInt(pricePerToppings) + parseInt(pricePerCrust) )*parseInt(pizzaNumber) )
-        return totalCost
-      };
-      totalAmount();
-      var totalAmount1=totalAmount()
-      var totalWithDelivery=parseInt(totalAmount1)+parseInt(deliveryFee); 
-     // alert(totalAmount1)
-      //var properties=[radioValue,selectedcrusttype,selectedtoppings,pizzaNumber,totalAmount1]
-      $(".size1").append(radioValue+ "</br>"); 
-      $(".type").append(selectedcrusttype+ "</br>" ); 
-      $(".topping").append(selectedtoppings+ "</br>"); 
-      $(".numb").append(pizzaNumber+ "</br>"); 
-      $(".amnt").append(totalAmount1+ "</br>" ); 
-
-
-
-      
-      var delivery = $("input[name='delivery']:checked").val();
-      if(delivery=="delivered"){
-          let charges= totalAmount1+deliveryFee
-          //alert(charges)
-          $(".your_location").show();
-          $(".amnt").html(totalWithDelivery+ "</br>" );
-          $(".amnt").prepend("amount"+ "</br>" ); 
-
+    if(pricePerSize||pricePerToppings||pricePerCrust==="undefined"){
+    
+      var totalAmount = function () {
+        var totalCost=((parseInt(pricePerSize) + parseInt(pricePerToppings) + parseInt(pricePerCrust) )*parseInt(pizzaNumber) )
+            return totalCost
+          };
+          totalAmount();
+          var totalAmount1=totalAmount()
+          var totalWithDelivery=parseInt(totalAmount1)+parseInt(deliveryFee); 
+         // alert(totalAmount1)
+          //var properties=[radioValue,selectedcrusttype,selectedtoppings,pizzaNumber,totalAmount1]
+          $(".size1").append(radioValue+ "</br>"); 
+          $(".type").append(selectedcrusttype+ "</br>" ); 
+          $(".topping").append(selectedtoppings+ "</br>"); 
+          $(".numb").append(pizzaNumber+ "</br>"); 
+          $(".amnt").append(totalAmount1+ "</br>" ); 
+    
+    
+    
           
-          
-      }else if(delivery=="pick-up"){
-
-          alert("your order has been recieved, thank you for shopping with us, please collect your order within the hour your charges are: "+totalAmount1)
-      }
-      else{
-          alert("select your delivery mode")
-      }
-
-
-      var loc=function(){
-        var location=$("#ulocation").val()
-            alert(location)
-        
-      }
+          var delivery = $("input[name='delivery']:checked").val();
+          if(delivery=="delivered"){
+              let charges= totalAmount1+deliveryFee
+              //alert(charges)
+              $(".your_location").show();
+              $(".amnt").html(totalWithDelivery+ "</br>" );
+              $(".amnt").prepend("amount"+ "</br>" ); 
+    
+              
+              
+          }else if(delivery=="pick-up"){
+    
+              alert("your order has been recieved, thank you for shopping with us, please collect your order within the hour your charges are: "+totalAmount1)
+          }
+          else{
+              alert("select your delivery mode")
+          }
+    
+    
+          var loc=function(){
+            var location=$("#ulocation").val()
+                alert(location)
+            
+          }
+     
+// alert("hi")
+    }
+    else{
+         alert("make sure to select all of your pizzas specifications, thank you")
+    } 
 
      
     // 
