@@ -146,11 +146,11 @@ $(document).ready(function () {
           }
     
     
-          var loc=function(){
-            var location=$("#ulocation").val()
-                alert(location)
+          // var loc=function(){
+          //   var location=$("#ulocation").val()
+          //       alert(location)
             
-          }
+         // }
      
 // alert("hi")
     }
@@ -158,6 +158,15 @@ $(document).ready(function () {
          alert("make sure to select all of your pizzas specifications, thank you")
     } 
 
+    $("#deliv").click(function(){
+      var totalSubmit =totalAmount
+      var uText= $("#ulocation").val()
+      totalAmount();
+      var totalAmount1=totalAmount()
+      var totalWithDelivery=parseInt(totalAmount1)+parseInt(deliveryFee); 
+      
+      alert("Thankyou the order shall be delivered to:" + "" + uText +" Your total cost is:" + totalWithDelivery)
+    })
      
     // 
     //  $(".your_location").show( slow, swing)
